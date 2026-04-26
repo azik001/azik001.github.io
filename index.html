@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Azamat Katrenov | Linux Systems Administrator</title>
 
   <style>
@@ -29,22 +30,22 @@
     }
 
     .container {
-      max-width: 920px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 32px 18px;
+      padding: 34px 18px;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 32px;
+      padding: 34px;
       box-shadow: 0 8px 24px rgba(31, 41, 55, 0.06);
     }
 
     header {
       border-bottom: 1px solid var(--border);
-      padding-bottom: 22px;
+      padding-bottom: 24px;
       margin-bottom: 26px;
     }
 
@@ -74,22 +75,8 @@
       color: var(--accent-dark);
     }
 
-    h3 {
-      margin: 18px 0 6px;
-      font-size: 17px;
-    }
-
     p {
       margin: 8px 0;
-    }
-
-    ul {
-      margin: 8px 0 0 20px;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 7px;
     }
 
     a {
@@ -123,29 +110,31 @@
       color: #ffffff;
     }
 
-    .skills {
+    .cert-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 12px 0 0;
+    }
+
+    .cert-list li {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 13px;
     }
 
-    .skill {
+    .cert-icon {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .resume-box {
+      margin-top: 12px;
+      padding: 16px;
       border: 1px solid var(--border);
+      border-radius: 12px;
       background: #f9fbfd;
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 14px;
-      color: #2f3b4a;
-    }
-
-    .project {
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .project:last-child {
-      border-bottom: none;
     }
 
     footer {
@@ -156,6 +145,10 @@
     }
 
     @media (max-width: 600px) {
+      .container {
+        padding: 20px 12px;
+      }
+
       .card {
         padding: 22px;
       }
@@ -175,6 +168,14 @@
       .button {
         width: 100%;
         text-align: center;
+      }
+
+      .cert-list li {
+        align-items: flex-start;
+      }
+
+      .cert-icon {
+        margin-top: 3px;
       }
     }
   </style>
@@ -200,126 +201,77 @@
       <p>
         I am a Linux and infrastructure professional with 11+ years of experience supporting production Linux,
         Windows Server, virtualization, databases, web infrastructure, monitoring, automation, and security hardening.
-        My background includes government, cloud, and financial environments, with hands-on experience in production
-        support, incident troubleshooting, backup and disaster recovery, infrastructure automation, and audit readiness.
+        I hold RHCSA, RHCE, Red Hat Certified Specialist in Containers, and Microsoft Azure Fundamentals certifications.
       </p>
 
-      <h2>Core Skills</h2>
-      <div class="skills">
-        <span class="skill">Linux</span>
-        <span class="skill">RHEL</span>
-        <span class="skill">CentOS</span>
-        <span class="skill">AlmaLinux</span>
-        <span class="skill">Rocky Linux</span>
-        <span class="skill">Ubuntu</span>
-        <span class="skill">Debian</span>
-        <span class="skill">Windows Server</span>
-        <span class="skill">Active Directory</span>
-        <span class="skill">Bash</span>
-        <span class="skill">Ansible</span>
-        <span class="skill">Terraform</span>
-        <span class="skill">Docker</span>
-        <span class="skill">Podman</span>
-        <span class="skill">Proxmox</span>
-        <span class="skill">VMware</span>
-        <span class="skill">KVM</span>
-        <span class="skill">Hyper-V</span>
-        <span class="skill">Nginx</span>
-        <span class="skill">Apache</span>
-        <span class="skill">MySQL</span>
-        <span class="skill">PostgreSQL</span>
-        <span class="skill">MS SQL Server</span>
-        <span class="skill">Zabbix</span>
-        <span class="skill">Prometheus</span>
-        <span class="skill">Grafana</span>
-        <span class="skill">Splunk</span>
-        <span class="skill">SSH Hardening</span>
-        <span class="skill">SELinux</span>
-        <span class="skill">PAM</span>
-        <span class="skill">Firewalls</span>
-        <span class="skill">Backup & DR</span>
-      </div>
+      <p>
+        My background includes production support, incident troubleshooting, backup and disaster recovery,
+        infrastructure automation, Linux hardening, and audit readiness across government, cloud, and financial environments.
+      </p>
 
       <h2>My IT Certifications</h2>
-      <ul>
+
+      <ul class="cert-list">
         <li>
+          <img
+            class="cert-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg"
+            alt="Red Hat"
+          />
           <a href="https://rhtapps.redhat.com/verify?certId=210-200-721" target="_blank" rel="noopener noreferrer">
             RHCSA - Red Hat Certified System Administrator
           </a>
         </li>
+
         <li>
+          <img
+            class="cert-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg"
+            alt="Red Hat"
+          />
           <a href="https://www.credly.com/badges/5d4b778f-ec61-45d9-a398-220a7881c914/linked_in_profile" target="_blank" rel="noopener noreferrer">
             Red Hat Certified Engineer (RHCE)
           </a>
         </li>
+
         <li>
+          <img
+            class="cert-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg"
+            alt="Red Hat"
+          />
           <a href="https://www.credly.com/badges/aa17485c-631c-452b-9361-37d1b619f346/linked_in_profile" target="_blank" rel="noopener noreferrer">
             Red Hat Certified Specialist in Containers — EX188
           </a>
         </li>
+
         <li>
+          <img
+            class="cert-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+            alt="Azure"
+          />
           <a href="https://learn.microsoft.com/en-us/users/azamatkatrenov-3574/credentials/5f7a8a2b674bdf50?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
             AZ-900 - Microsoft Certified: Azure Fundamentals
           </a>
         </li>
       </ul>
 
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Linux Security Hardening & Audit Readiness</h3>
+      <h2>Resume</h2>
+      <div class="resume-box">
         <p>
-          Implemented password complexity, account lockout, SSH hardening, SELinux configuration,
-          PAM controls, and audit-ready documentation for Linux infrastructure.
+          For detailed experience, projects, technical skills, certifications, and education, please download my resume.
         </p>
         <p>
-          <a href="https://github.com/azik001/rocky9-password-policy-pam" target="_blank" rel="noopener noreferrer">
-            View project on GitHub
-          </a>
+          <a class="button primary" href="Azamat_Katrenov_Resume.pdf" download>Download Resume</a>
         </p>
       </div>
-
-      <div class="project">
-        <h3>Infrastructure Modernization: CentOS 7 to Rocky Linux 9 Migration</h3>
-        <p>
-          Migrated legacy Linux systems and validated application compatibility, services, firewall rules,
-          cron jobs, backups, user access, and system configurations after migration.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Containerization with Docker and Podman</h3>
-        <p>
-          Built and deployed containerized applications, including image builds, runtime configuration,
-          networking, persistent volumes, and troubleshooting.
-        </p>
-      </div>
-
-      <h2>Experience Highlights</h2>
-      <ul>
-        <li>Supported 30+ cloud-based Linux servers, troubleshooting OS, networking, web application, and database issues.</li>
-        <li>Managed 100+ Linux and Windows servers in production environments.</li>
-        <li>Implemented high-availability web infrastructure using Keepalived and MySQL replication, achieving 99.9% availability.</li>
-        <li>Designed and deployed Matrix Synapse internal messaging platform for 300+ employees.</li>
-        <li>Automated backup and disaster recovery processes using Bash scripts and scheduled cron jobs.</li>
-      </ul>
 
       <h2>Contact</h2>
       <p>
-        Email:
-        <a href="mailto:katrenov.azamat@gmail.com">katrenov.azamat@gmail.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/azamat-katrenov-b5549a139" target="_blank" rel="noopener noreferrer">
-          linkedin.com/in/azamat-katrenov-b5549a139
-        </a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/azik001" target="_blank" rel="noopener noreferrer">
-          github.com/azik001
-        </a>
+        <a href="mailto:katrenov.azamat@gmail.com">katrenov.azamat@gmail.com</a> |
+        <a href="https://linkedin.com/in/azamat-katrenov-b5549a139" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="https://github.com/azik001" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
 
       <footer>
