@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azamat Katrenov | Linux Systems Administrator</title>
+
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --border: #d9e1ec;
+      --accent: #0f4c81;
+      --accent-dark: #0b3a63;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+      box-shadow: 0 8px 24px rgba(31, 41, 55, 0.06);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 22px;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 34px;
+      line-height: 1.2;
+    }
+
+    .headline {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .location {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      color: var(--accent-dark);
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      color: var(--accent);
+      background: #ffffff;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .skill {
+      border: 1px solid var(--border);
+      background: #f9fbfd;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 14px;
+      color: #2f3b4a;
+    }
+
+    .project {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .headline {
+        font-size: 16px;
+      }
+
+      .links {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="card">
+      <header>
+        <h1>Azamat Katrenov</h1>
+        <p class="headline">Linux Systems Administrator | RHCE | Infrastructure Automation</p>
+        <p class="location">Kitchener, Ontario, Canada | Authorized to work in Canada</p>
+
+        <div class="links">
+          <a class="button primary" href="Azamat_Katrenov_Resume.pdf" download>Download Resume</a>
+          <a class="button" href="mailto:katrenov.azamat@gmail.com">Email</a>
+          <a class="button" href="https://linkedin.com/in/azamat-katrenov-b5549a139" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button" href="https://github.com/azik001" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </header>
+
+      <h2>About Me</h2>
+      <p>
+        I am a Linux and infrastructure professional with 11+ years of experience supporting production Linux,
+        Windows Server, virtualization, databases, web infrastructure, monitoring, automation, and security hardening.
+        My background includes government, cloud, and financial environments, with hands-on experience in production
+        support, incident troubleshooting, backup and disaster recovery, infrastructure automation, and audit readiness.
+      </p>
+
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <span class="skill">Linux</span>
+        <span class="skill">RHEL</span>
+        <span class="skill">CentOS</span>
+        <span class="skill">AlmaLinux</span>
+        <span class="skill">Rocky Linux</span>
+        <span class="skill">Ubuntu</span>
+        <span class="skill">Debian</span>
+        <span class="skill">Windows Server</span>
+        <span class="skill">Active Directory</span>
+        <span class="skill">Bash</span>
+        <span class="skill">Ansible</span>
+        <span class="skill">Terraform</span>
+        <span class="skill">Docker</span>
+        <span class="skill">Podman</span>
+        <span class="skill">Proxmox</span>
+        <span class="skill">VMware</span>
+        <span class="skill">KVM</span>
+        <span class="skill">Hyper-V</span>
+        <span class="skill">Nginx</span>
+        <span class="skill">Apache</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">MS SQL Server</span>
+        <span class="skill">Zabbix</span>
+        <span class="skill">Prometheus</span>
+        <span class="skill">Grafana</span>
+        <span class="skill">Splunk</span>
+        <span class="skill">SSH Hardening</span>
+        <span class="skill">SELinux</span>
+        <span class="skill">PAM</span>
+        <span class="skill">Firewalls</span>
+        <span class="skill">Backup & DR</span>
+      </div>
+
+      <h2>My IT Certifications</h2>
+      <ul>
+        <li>
+          <a href="https://rhtapps.redhat.com/verify?certId=210-200-721" target="_blank" rel="noopener noreferrer">
+            RHCSA - Red Hat Certified System Administrator
+          </a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/badges/5d4b778f-ec61-45d9-a398-220a7881c914/linked_in_profile" target="_blank" rel="noopener noreferrer">
+            Red Hat Certified Engineer (RHCE)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/badges/aa17485c-631c-452b-9361-37d1b619f346/linked_in_profile" target="_blank" rel="noopener noreferrer">
+            Red Hat Certified Specialist in Containers — EX188
+          </a>
+        </li>
+        <li>
+          <a href="https://learn.microsoft.com/en-us/users/azamatkatrenov-3574/credentials/5f7a8a2b674bdf50?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+            AZ-900 - Microsoft Certified: Azure Fundamentals
+          </a>
+        </li>
+      </ul>
+
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Linux Security Hardening & Audit Readiness</h3>
+        <p>
+          Implemented password complexity, account lockout, SSH hardening, SELinux configuration,
+          PAM controls, and audit-ready documentation for Linux infrastructure.
+        </p>
+        <p>
+          <a href="https://github.com/azik001/rocky9-password-policy-pam" target="_blank" rel="noopener noreferrer">
+            View project on GitHub
+          </a>
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Infrastructure Modernization: CentOS 7 to Rocky Linux 9 Migration</h3>
+        <p>
+          Migrated legacy Linux systems and validated application compatibility, services, firewall rules,
+          cron jobs, backups, user access, and system configurations after migration.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Containerization with Docker and Podman</h3>
+        <p>
+          Built and deployed containerized applications, including image builds, runtime configuration,
+          networking, persistent volumes, and troubleshooting.
+        </p>
+      </div>
+
+      <h2>Experience Highlights</h2>
+      <ul>
+        <li>Supported 30+ cloud-based Linux servers, troubleshooting OS, networking, web application, and database issues.</li>
+        <li>Managed 100+ Linux and Windows servers in production environments.</li>
+        <li>Implemented high-availability web infrastructure using Keepalived and MySQL replication, achieving 99.9% availability.</li>
+        <li>Designed and deployed Matrix Synapse internal messaging platform for 300+ employees.</li>
+        <li>Automated backup and disaster recovery processes using Bash scripts and scheduled cron jobs.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:katrenov.azamat@gmail.com">katrenov.azamat@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/azamat-katrenov-b5549a139" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/azamat-katrenov-b5549a139
+        </a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/azik001" target="_blank" rel="noopener noreferrer">
+          github.com/azik001
+        </a>
+      </p>
+
+      <footer>
+        © 2026 Azamat Katrenov
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
